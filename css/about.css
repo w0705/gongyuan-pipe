@@ -1,0 +1,53 @@
+/* 关于我们页面样式 */
+.page-hero {
+  background: linear-gradient(135deg, #0056b3, #0077e6);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.page-hero h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.page-hero p {
+  opacity: 0.9;
+}
+
+.about-section {
+  padding: 60px 0;
+}
+.about-block {
+  margin-bottom: 40px;
+}
+.about-block h3 {
+  font-size: 24px;
+  color: #0056b3;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6f0ff;
+}
+.about-block p {
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+.advantage-list {
+  list-style: none;
+  padding-left: 0;
+}
+.advantage-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #555;
+}
+.advantage-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0056b3;
+  font-weight: bold;
+}
+.cert-placeholder {
+  margin-top: 12px;
+}

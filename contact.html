@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们 - 公元管道</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <h1>公元管道</h1>
+      <span class="tagline">专业水管·施工改造·值得信赖</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">首页</a>
+      <a href="products.html">产品中心</a>
+      <a href="cases.html">工程案例</a>
+      <a href="about.html">关于我们</a>
+      <a href="contact.html" class="active">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h2>联系我们</h2>
+    <p>期待您的咨询，我们将竭诚为您服务</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-info">
+      <h3>联系方式</h3>
+      <div class="info-item">
+        <span class="icon">📞</span>
+        <span>电话：400-XXX-XXXX</span>
+      </div>
+      <div class="info-item">
+        <span class="icon">📧</span>
+        <span>邮箱：info@gongyuan-pipe.com</span>
+      </div>
+      <div class="info-item">
+        <span class="icon">📍</span>
+        <span>地址：XX市XX区XX路XX号</span>
+      </div>
+      <div class="info-item">
+        <span class="icon">⏰</span>
+        <span>工作时间：周一至周日 8:00-20:00</span>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h3>在线咨询</h3>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">姓名 *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">电话 *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="type">咨询类型 *</label>
+          <select id="type" name="type" required>
+            <option value="">请选择</option>
+            <option value="install">水管安装</option>
+            <option value="repair">漏水维修</option>
+            <option value="remodel">管道改造</option>
+            <option value="project">工程项目</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">留言</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+      </form>
+      <div id="formResult" class="form-result" style="display:none;"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2024 公元管道. 保留所有权利.</p>
+    <p>电话：400-XXX-XXXX | 地址：XX市XX区XX路XX号</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const result = document.getElementById('formResult');
+  // 这里可以扩展为真实的后端接口
+  result.style.display = 'block';
+  result.innerHTML = '<p style="color:#0056b3; font-weight:bold;">✅ 提交成功！我们会尽快联系您。</p>';
+  form.reset();
+});
+</script>
+</body>
+</html>
