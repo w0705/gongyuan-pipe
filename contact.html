@@ -11,7 +11,7 @@
 <header class="header">
   <div class="container">
     <div class="logo">
-      <h1>公元管道</h1>
+      <img src="images/logo.jpg" alt="公元管道" class="logo-img">
       <span class="tagline">专业水管·施工改造·值得信赖</span>
     </div>
     <nav class="nav">
@@ -37,7 +37,7 @@
       <h3>联系方式</h3>
       <div class="info-item">
         <span class="icon">📞</span>
-        <span>电话：400-XXX-XXXX</span>
+        <span>电话：19933218809</span>
       </div>
       <div class="info-item">
         <span class="icon">📧</span>
@@ -45,7 +45,7 @@
       </div>
       <div class="info-item">
         <span class="icon">📍</span>
-        <span>地址：XX市XX区XX路XX号</span>
+        <span>地址：河北省邢台市广宗县金园小区 109 商铺</span>
       </div>
       <div class="info-item">
         <span class="icon">⏰</span>
@@ -89,7 +89,7 @@
 <footer class="footer">
   <div class="container">
     <p>© 2024 公元管道. 保留所有权利.</p>
-    <p>电话：400-XXX-XXXX | 地址：XX市XX区XX路XX号</p>
+    <p>电话：19933218809 | 地址：河北省邢台市广宗县金园小区 109 商铺</p>
   </div>
 </footer>
 
@@ -99,7 +99,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const form = e.target;
   const result = document.getElementById('formResult');
-  // 这里可以扩展为真实的后端接口
   result.style.display = 'block';
   result.innerHTML = '<p style="color:#0056b3; font-weight:bold;">✅ 提交成功！我们会尽快联系您。</p>';
   form.reset();
